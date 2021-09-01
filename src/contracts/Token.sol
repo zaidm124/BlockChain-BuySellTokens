@@ -4,7 +4,11 @@ contract Token {
     string public name = "DApp Token";
     string public symbol = "DAPP";
     string public standard = "DApp Token v1.0";
-    uint256 public totalSupply = 1000000;
+    uint256 public totalSupply = 100000000000000000000000000; // 1 Million Tokens
+    uint8 public decimals = 18;
+
+    // 1000000 ether=1000000-000000000000000000 Wei
+    // 1000000 dollars=100000000000000000000000000 Cents
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 

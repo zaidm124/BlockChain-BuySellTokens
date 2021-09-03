@@ -25,6 +25,10 @@ contract Token {
         balanceOf[msg.sender] = totalSupply;
     }
 
+    function balanceof(address tokenOwner) public view returns (uint256) {
+        return balanceOf[tokenOwner];
+    }
+
     function transfer(address _to, uint256 _value)
         public
         returns (bool success)
